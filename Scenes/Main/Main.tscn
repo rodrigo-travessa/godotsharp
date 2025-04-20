@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1jecq4hmbpq1"]
+
+[ext_resource type="Script" uid="uid://qt13rfy4wpuw" path="res://Scenes/Main/Main.cs" id="1_cmk6n"]
+[ext_resource type="PackedScene" uid="uid://dmhqjk60r4o7e" path="res://Scenes/Player/Player.tscn" id="1_p8rbg"]
+[ext_resource type="PackedScene" uid="uid://13yyr6qspjmy" path="res://Scenes/UI/MainMenuUi.tscn" id="2_qtv3y"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_cmk6n")
+
+[node name="Player" parent="." instance=ExtResource("1_p8rbg")]
+visible = false
+position = Vector2(532, 326)
+
+[node name="MainMenuUi" parent="." instance=ExtResource("2_qtv3y")]
